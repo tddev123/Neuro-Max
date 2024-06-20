@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
-        <div>
+        <div classname="mr-4">
           <div className="text-3xl font-serif flex items-center tracking-wide mb-4">
             <img className='mr-2 w-8 h-8' src="./Images/icons8-brain-50.png" alt="NeuroMax Logo" />
             <h1>Neuro<span className='text-yellow-400'>Max</span></h1>

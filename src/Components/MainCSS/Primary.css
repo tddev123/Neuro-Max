@@ -1,0 +1,138 @@
+.HeaderMax {
+    color: #FAB005 ;
+}
+
+.LoginBtn {
+
+    border-color: #FAB005;
+    
+}
+
+.Signinbtn {
+
+    border-color: #FAB005;
+    
+
+}
+
+@keyframes glow {
+    0% {
+      filter: brightness(100%);
+    }
+    50% {
+      filter: brightness(150%);
+    }
+    100% {
+      filter: brightness(100%);
+    }
+  }
+  
+  .HeaderBrainLogo {
+    animation: glow 3s ease-in-out infinite; /* Adjust animation duration as needed */
+  }
+  
+
+ 
+
+/*The Changing Big Letters On Homepage*/
+
+@keyframes swoop-in-out {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    10%, 25% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    26%, 100% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+  }
+  
+  .swoop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+
+
+    height: 300px; /* Adjust height as needed */
+    
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+  }
+  
+  .swoop-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-right: 20px;
+  }
+  
+  .swoop-text {
+    position: absolute;
+    margin-left: 50px;
+   text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #FFFFFF; /* Text color */
+    opacity: 0; /* Start with opacity 0 */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: swoop-in-out 20s linear infinite; /* Total duration for one full cycle */
+  }
+  
+  .swoop-text:nth-child(1) {
+    animation-delay: 0s; /* No delay for the first sentence */
+  }
+  
+  .swoop-text:nth-child(2) {
+    animation-delay: 5s; /* Delay for the second sentence */
+  }
+  
+  .swoop-text:nth-child(3) {
+    animation-delay: 10s; /* Delay for the third sentence */
+  }
+  
+  .swoop-text:nth-child(4) {
+    animation-delay: 15s; /* Delay for the fourth sentence */
+  }
+
+
+
+
+
+
+
+  /* Bouncing Arrow HomePage */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes flash {
+    0%, 100% {
+      opacity: .5;
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }
+  
+  .bounce-flash-arrow {
+    display: block;
+    margin: 20px auto;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    color: #ffffff;
+    animation: bounce 2s infinite, flash 1s infinite;
+  }
+
+
+
